@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "module": "CommonJS",
+    "target": "ES5",
+    "lib": [
+      "ES2015",
+      "DOM",
+      "ESNext"
+    ],
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "emitBOM": false,
+    "removeComments": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~*": [
+        "./src/*"
+      ],
+      "*": [
+        "./node_modules/*",
+        "./node_modules/@types/*"
+      ],
+      "typings*": [
+        "./typings/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*",
+    "./typings/**/*",
+    "./webpack.config.ts",
+    "../../typings/**/*"
+  ]
+}
